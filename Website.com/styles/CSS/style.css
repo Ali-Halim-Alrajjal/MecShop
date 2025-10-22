@@ -1,0 +1,200 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .product-item {
+            background: #fafafa;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            transition: transform 0.3s cubic-bezier(.25,1.7,.45,.87), box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .product-item:hover {
+            transform: translateY(-12px) scale(1.04) rotate(-1deg);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+            z-index: 2;
+        }
+        .product-item::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle, #e0e7ff 0%, transparent 70%);
+            opacity: 0.5;
+            transform: translate(-50%, -50%) scale(0.7);
+            transition: width 0.4s, height 0.4s;
+            z-index: 0;
+        }
+        .product-item:hover::before {
+            width: 250px;
+            height: 250px;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        .product-desc {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .product-price {
+            color: #2a7a2e;
+            font-weight: bold;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 2.5rem auto;
+            
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+        .form-row {
+            display: flex;
+            gap: 0.7rem;
+        }
+        .form-row > div {
+            flex: 1;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        button {
+            flex: 1;
+            padding: 0.8rem 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-submit {
+            background: #2a7a2e;
+            color: #fff;
+        }
+        .btn-submit:hover {
+            background: #256626;
+        }
+        .btn-cancel {
+            background: #e74c3c;
+            color: #fff;
+        }
+        .btn-cancel:hover {
+            background: #c0392b;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem 0.5rem;
+            }
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
